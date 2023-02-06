@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  background: rgb(190, 184, 183);
 }
 
 h1 {
@@ -20,8 +21,9 @@ button {
 
 .page-header {
   position: relative;
-  top: -5x;
+  top: 5x;
   left: 20px;
+  color: rgb(59, 114, 181);
 }
 
 .search {
@@ -36,6 +38,7 @@ button {
   border-style: solid;
   border-width: thin;
   padding: 5px 10px;
+  background: rgba(190, 184, 183, 0.5);
 }
 
 .search-city {

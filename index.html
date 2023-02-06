@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wheather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Weather me up</h1>
+      <form class="search" id="search-engine">
+        <input
+          type="text"
+          placeholder="Type in the city"
+          autocomplete="off"
+          autofocus="on"
+          class="search-bar"
+          id="type-city"
+        />
+        <input
+          type="submit"
+          value="Search"
+          id="search-city"
+          class="search-city"
+        />
+      </form>
+    </header>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-current-weather">
+          <div class="current-city" id="current-city">Copenhagen</div>
+          <div class="current-date-time" id="current-date-time">#</div>
+
+          <div class="current-temperature" id="temperature">7ºC</div>
+          <div class="current-humidity" id="humidity">Humidity: 80%</div>
+          <div class="current-Windspeed" id="windspeed">Wind: 6 km/h</div>
+          <div class="current-description" id="weather-description">Rain</div>
+        </div>
+
+        <div class="col-6 col-fiveday">
+          <div class="heading-fiveday">Five day forecast:</div>
+          <div class="row row-fiveday-forecast">
+            <div class="col mx-1 day1-forecast">
+              Wednesday
+              <br />
+              4ºC
+              <br />
+              ☀️
+            </div>
+            <div class="col mx-1 day2-forecast">
+              Thursday
+              <br />
+              3ºC
+              <br />
+              🌥
+            </div>
+            <div class="col mx-1 day3-forecast">
+              Friday
+              <br />
+              2ºC
+              <br />
+              🌧
+            </div>
+            <div class="col mx-1 day4-forecast">
+              Saturday
+              <br />
+              -3ºC
+              <br />
+              ❄️
+            </div>
+            <div class="col mx-1 day5-forecast">
+              Sunday
+              <br />
+              4ºC
+              <br />
+              ☀️
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="currentGeoButton">Current Location</button>
+    <footer class="page-footer">Webpage made by Jin Mia Kris</footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

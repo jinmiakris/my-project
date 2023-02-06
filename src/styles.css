@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  background: rgb(190, 184, 183);
+  background: rgb(238, 234, 233);
 }
 
 h1 {
@@ -17,6 +17,13 @@ button {
   border-style: solid;
   border-radius: 30px;
   padding: 20px;
+}
+
+a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .page-header {
@@ -38,7 +45,7 @@ button {
   border-style: solid;
   border-width: thin;
   padding: 5px 10px;
-  background: rgba(190, 184, 183, 0.5);
+  background: rgb(238, 234, 233);
 }
 
 .search-city {
@@ -109,6 +116,7 @@ button {
   padding: 60px;
   border-radius: 4px;
 }
+
 .page-footer {
   position: sticky;
   text-align: center;
